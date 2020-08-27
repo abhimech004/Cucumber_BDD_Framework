@@ -1,0 +1,177 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#Author: your.email@your.domain.com"
+      },
+      {
+        "line": 2,
+        "value": "#Keywords Summary :"
+      },
+      {
+        "line": 3,
+        "value": "#Feature: List of scenarios."
+      },
+      {
+        "line": 4,
+        "value": "#Scenario: Business rule through list of steps with arguments."
+      },
+      {
+        "line": 5,
+        "value": "#Given: Some precondition step"
+      },
+      {
+        "line": 6,
+        "value": "#When: Some key actions"
+      },
+      {
+        "line": 7,
+        "value": "#Then: To observe outcomes or validation"
+      },
+      {
+        "line": 8,
+        "value": "#And,But: To enumerate more Given,When,Then steps"
+      },
+      {
+        "line": 9,
+        "value": "#Scenario Outline: List of steps for data-driven as an Examples and \u003cplaceholder\u003e"
+      },
+      {
+        "line": 10,
+        "value": "#Examples: Container for s table"
+      },
+      {
+        "line": 11,
+        "value": "#Background: List of steps run before each of the scenarios"
+      },
+      {
+        "line": 12,
+        "value": "#\"\"\" (Doc Strings)"
+      },
+      {
+        "line": 13,
+        "value": "#| (Data Tables)"
+      },
+      {
+        "line": 14,
+        "value": "#@ (Tags/Labels):To group Scenarios"
+      },
+      {
+        "line": 15,
+        "value": "#\u003c\u003e (placeholder)"
+      },
+      {
+        "line": 16,
+        "value": "#\"\""
+      },
+      {
+        "line": 17,
+        "value": "## (Comments)"
+      },
+      {
+        "line": 18,
+        "value": "#Sample Feature Definition Template"
+      }
+    ],
+    "line": 19,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 9116838600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "testing of Login for the AutomationPractice Application",
+        "description": "",
+        "id": "login-test-for-the-automationpractice-application;testing-of-login-for-the-automationpractice-application;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 780885000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 705075600,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User pass the Application Url",
+            "match": {
+              "location": "login_Step_Definition.user_pass_the_Application_Url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 86981968900,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Username as \"abc@outlook.com\" and password as \"abhishek14\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abc@outlook.com",
+                  "offset": 13
+                },
+                {
+                  "val": "abhishek14",
+                  "offset": 47
+                }
+              ],
+              "location": "login_Step_Definition.username_as_and_password_as(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1787164200,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User should be able to login to the Application and the \"Abhi Kumar\" should appear in the username link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Abhi Kumar",
+                  "offset": 57
+                }
+              ],
+              "location": "login_Step_Definition.user_should_be_able_to_login_to_the_AutomationPractice_Application_and_the_should_appear_in_the_username_link(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login test for the AutomationPractice Application",
+    "description": "",
+    "id": "login-test-for-the-automationpractice-application",
+    "keyword": "Feature",
+    "uri": "login.feature"
+  }
+]
