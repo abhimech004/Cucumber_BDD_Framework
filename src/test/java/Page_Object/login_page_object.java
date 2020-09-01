@@ -24,5 +24,8 @@ public class login_page_object extends BaseClass{
 	
 	@FindBy(how=How.XPATH, using="//button[@id='SubmitLogin']//span")
 	public static WebElement submitBtn;
+	
+	@FindBy(how=How.XPATH, using="//a[@title='View my customer account']/span")
+	public static WebElement usernameLnk;
 
 }

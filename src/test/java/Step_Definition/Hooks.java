@@ -21,8 +21,6 @@ import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-import Page_Object.home_page_object;
 import Page_Object.login_page_object;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
@@ -99,30 +97,6 @@ public class Hooks{
 	
 	//----------------------------------Generic Methods-------------------------------------------------------------------------------------//
 	
-	public static void waitFunction(WebElement ele) {
-		
-		WebDriverWait wait = new WebDriverWait(driver,80);
-		wait.until(ExpectedConditions.visibilityOf(ele));
-		
-	}
-	
-	public static void elementToBeClicked(WebElement ele) {
-		
-		ele.click();
-	}
-	
-    public static void enterTxt(WebElement ele, String txt) {
-		
-		ele.sendKeys(txt);
-	}
-	
-    public static void verifyText(String actVal, String expVal) {
-		
-		if(actVal.equals(expVal)) {
-			System.out.println("Pass");
-		}else
-			System.out.println("Fail");
-    	
-    }
+
 	
 }
