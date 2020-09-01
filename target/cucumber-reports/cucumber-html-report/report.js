@@ -131,7 +131,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 9116838600,
+  "duration": 7517401400,
   "status": "passed"
 });
 formatter.scenario({
@@ -168,7 +168,7 @@ formatter.match({
   "location": "login_Step_Definition.user_pass_the_Application_Url()"
 });
 formatter.result({
-  "duration": 705075600,
+  "duration": 415219400,
   "status": "passed"
 });
 formatter.match({
@@ -185,7 +185,7 @@ formatter.match({
   "location": "login_Step_Definition.username_as_and_password_as(String,String)"
 });
 formatter.result({
-  "duration": 86981968900,
+  "duration": 31989172000,
   "status": "passed"
 });
 formatter.match({
@@ -198,11 +198,11 @@ formatter.match({
   "location": "login_Step_Definition.user_should_be_able_to_login_to_the_AutomationPractice_Application_and_the_should_appear_in_the_username_link(String)"
 });
 formatter.result({
-  "duration": 1787164200,
+  "duration": 7069542600,
   "status": "passed"
 });
 formatter.after({
-  "duration": 780885000,
+  "duration": 733318000,
   "status": "passed"
 });
 });

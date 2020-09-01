@@ -5,9 +5,8 @@ public class DemoExcel {
 	public static void main(String[] args) throws Throwable {
 		// TODO Auto-generated method stub
 		
-		ReadWriteXLS xls = new ReadWriteXLS();        
-        System.out.println(xls.getCellData("C:\\Users\\abhim\\OneDrive\\Desktop\\Data.xlsx","BrowserDetails","URL",2));
-      //  System.out.println(xls.getCellData("BrowserDetails","URL",3));
+		String val = GetCellValueBasedOnColumnName.readdatafromExcelusingcolumnName("C:\\Users\\abhim\\OneDrive\\Desktop\\Data.xlsx","BrowserDetails","URL", 1);
+		System.out.println(val);
 
 	}
 

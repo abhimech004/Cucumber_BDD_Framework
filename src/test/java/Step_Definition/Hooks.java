@@ -8,6 +8,8 @@ import java.util.Arrays;
 import java.util.Properties;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
+import org.apache.poi.EncryptedDocumentException;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.TakesScreenshot;
@@ -37,12 +39,18 @@ public class Hooks{
 	 * Delete all cookies at the start of each scenario to avoid
 	 * shared state between tests
 	 */
-	public void openBrowser() throws IOException {
-		prop=new Properties();
-		FileInputStream fis=new FileInputStream("src//main//resources//Browser.properties");
-		prop.load(fis);
-		String url=prop.getProperty("url");
-		String Browsername=prop.getProperty("browser");
+	public void openBrowser() throws IOException, Throwable, InvalidFormatException {
+//		prop=new Properties();
+//		FileInputStream fis=new FileInputStream("src//main//resources//Browser.properties");
+//		prop.load(fis);
+//		String url=prop.getProperty("url");
+//		String Browsername=prop.getProperty("browser");
+		
+		String Browsername=GetCellValueBasedOnColumnName.readdatafromExcelusingcolumnName("C:\\Users\\abhim\\OneDrive\\Desktop\\Data.xlsx","BrowserDetails","Browser", 1);
+		System.out.println(Browsername);
+		String url=GetCellValueBasedOnColumnName.readdatafromExcelusingcolumnName("C:\\Users\\abhim\\OneDrive\\Desktop\\Data.xlsx","BrowserDetails","URL", 1);
+		System.out.println(url);
+		
 		//logger Changes by Abhishek
 		logger.info("Fetching the Application URL from File --> " +" "+url+ " "+ "Opening the Url");
 		
@@ -61,7 +69,8 @@ public class Hooks{
 			
 			//Runtime.getRuntime().exec("AutoIT_Exe//AutoIT_Login.exe");
 			
-			driver.get(prop.getProperty("url"));
+		//	driver.get(prop.getProperty("url"));
+			driver.get(url);
 
 			
 		}
